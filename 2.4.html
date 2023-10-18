@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            background-color: #8ce3db;
+        }
+        .header {
+            background-color: #2980e3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* Розмістити навігацію в центрі */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Вирівняти блоки по ширині сторінки */
+            flex-wrap: wrap; /* Завернути блоки, якщо сторінка занадто вузька */
+        }
+        .news {
+            background-color: rgba(11, 24, 209, 0.7);
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .news h2 {
+            background-color: #40d9f0;
+            color: white;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            margin: 0;
+        }
+        .news ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .news ul li {
+            margin-bottom: 10px;
+        }
+        .form {
+            background-color: #f34c4c;
+            padding: 20px;
+            border: 1px solid #ef4141;
+            border-radius: 15px;
+            flex: 1; /* Зменшити ширину форми для покращення макету на вузьких екранах */
+            margin-top: 20px; /* Додати відступ між блоками новин і формою */
+        }
+        .form h2 {
+            margin: 0;
+        }
+        .form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form input[type="text"],
+        .form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ed3636;
+            border-radius: 5px;
+        }
+        .form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .table {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1;
+            margin-top: 20px; /* Додати відступ між формою і таблицею */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Сторінка</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="news">
+            <h2>НОВИНИ</h2>
+            <ul>
+                <li><a href="#">Новина 1</a></li>
+                <li><a href="#">Новина 2</a></li>
+                <li><a href="#">Новина 3</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <h2>Де нас шукати</h2>
+            <form>
+                <label for="name">Пароль:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Eлектронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+        <div class="table">
+            <h2>Таблиця з даними</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ім'я</th>
+                        <th>Вік</th>
+                        <th>Місто</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Іван</td>
+                        <td>25</td>
+                        <td>Київ</td>
+                    </tr>
+                    <tr>
+                        <td>Марія</td>
+                        <td>30</td>
+                        <td>Львів</td>
+                    </tr>
+                    <tr>
+                        <td>Петро</td>
+                        <td>22</td>
+                        <td>Одеса</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
